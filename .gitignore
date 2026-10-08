@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+~$*
+.vscode/
+.idea/
+
+# Claude Code
+CLAUDE.md
+
+# 보고서·발표자료는 로컬에만 둔다 (제출은 코드만)
+report/

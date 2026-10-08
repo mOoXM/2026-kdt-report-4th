@@ -1,0 +1,2 @@
+{ "name": "물리 진단 — 강사", "short_name": "물리 진단 — 강사", "start_url": "/app/teacher/", "scope": "/app/teacher/",
+  "display": "standalone", "orientation": "any", "background_color": "#FBFBF9", "theme_color": "#FBFBF9", "icons": [] }

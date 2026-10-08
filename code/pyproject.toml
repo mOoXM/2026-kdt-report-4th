@@ -1,0 +1,35 @@
+[project]
+name = "physics-lab"
+version = "0.2.0"
+description = "문항 분해형 학습 진단 플랫폼 — 물리학Ⅰ ㄱㄴㄷ형 문항의 보기별 판단으로 세부 개념을 진단한다"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "argon2-cffi>=25.1.0",
+    "fastapi>=0.141.1",
+    "numpy>=2.0",
+    "pillow>=12.3.0",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "uvicorn>=0.52.4",
+]
+
+# 실행 명령. `uv run pl-serve` 처럼 쓴다.
+[project.scripts]
+pl-serve      = "physics_lab.serve.api:main"
+pl-accounts   = "physics_lab.accounts:main"
+pl-diagnosis  = "physics_lab.engine.diagnosis:main"
+pl-demo-seed  = "physics_lab.demo_seed:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28",
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

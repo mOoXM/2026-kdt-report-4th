@@ -1,0 +1,7 @@
+{
+  "name": "@pl/shared",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "학생·강사·원장 앱이 같이 쓰는 것 — 서버 계약(api.ts) · 로그인 상태(auth.tsx) · 로그인 화면 · 스타일 토큰"
+}

@@ -1,0 +1,2 @@
+{ "name": "물리 진단 — 학생", "short_name": "물리 진단 — 학생", "start_url": "/app/student/", "scope": "/app/student/",
+  "display": "standalone", "orientation": "any", "background_color": "#FBFBF9", "theme_color": "#FBFBF9", "icons": [] }

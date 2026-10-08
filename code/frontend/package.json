@@ -1,0 +1,26 @@
+{
+  "name": "physics-lab-frontend",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev:student": "npm run dev -w apps/student",
+    "dev:teacher": "npm run dev -w apps/teacher"
+  },
+  "dependencies": {
+    "perfect-freehand": "^1.2.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}
